@@ -1,0 +1,277 @@
+/* Start Navbar */
+.navbar{
+    background-color: rgb(3, 2, 36);
+}
+
+.nav-item{
+    padding: 5px 20px;
+}
+
+.nav-item:hover{
+    border-bottom: 3px solid rgb(255, 0, 0);
+    transform: translateY(-4px);
+    transition: 0.5s;
+}
+
+.nav-item:hover .nav-link{
+    color: white;
+}
+/* End Navbar */
+
+/* About Section Start */
+.clr{
+    color:red;
+}
+
+p{
+    text-align: justify;
+}
+
+.info{
+    text-align: center;
+}
+
+
+body{
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+.changing-text{
+    color: red;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Typing text */
+.changing-text::before{
+    content: "Photographer";
+    animation: words 8s infinite;
+}
+
+/* Cursor + typing effect */
+.changing-text::after{
+    content: "|";
+    position: absolute;
+    right: -10px;
+    animation: blink 0.8s infinite;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* Changing words */
+@keyframes words {
+    0%{content: "Photographer";}
+    20%{content: "Visual Storyteller";}
+    40%{content: "Memory Creator";}
+    60%{content: "Creative Shooter";}
+    80%{content: "";}
+    100%{content: "Photographer";}
+}
+
+.hero{
+    border: 2px solid rgb(255, 0, 0);
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 40px;
+    background-color: rgb(255, 0, 0);
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+
+}
+
+.background{
+    background-color:rgb(3, 2, 36);
+    min-height: 92vh;
+    padding: 60px 20px;
+
+}
+
+.box1{
+    color: white;
+    margin-top: 30px;
+    text-align: left;
+    padding-right: 58px;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.bg1{
+    background: linear-gradient(rgba(0, 0, 0, 0.639)
+    ),url(cup.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.283);
+}
+
+.icons i{
+    display: inline-block;
+    color: rgb(255, 0, 0);
+    padding: 6px 10px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    margin: 5px; 
+    transition: 0.3s ease;
+}
+
+.icons i:hover{
+    color:rgb(3, 2, 36);
+    transform: translateY(-5px) scale(1.2);
+    background-color:rgb(255, 0, 0);
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+    
+}
+
+.see-more-btn{
+    position: relative;
+    overflow: hidden;
+}
+
+.see-more-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+}
+
+.see-more-btn:hover::before{
+    left: 100%; 
+}
+
+footer{
+    color: beige;
+    
+}
+/* About Section Start */
+
+/* Services Section */
+.services-section{
+    background-color: rgb(3, 2, 36);
+}
+
+/* Service Card */
+.service-card{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    padding: 30px 20px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.4s;
+    height: 100%;
+}
+
+/* Hover Effect */
+.service-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+
+}
+
+/* Icons */
+.service-icon{
+    font-size: 40px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.service-card h4{
+    margin-bottom: 10px;
+}
+
+.service-card p{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Button Hover */
+.services-section .btn:hover{
+    background-color: red;
+    color: rgb(3, 2, 36);
+    box-shadow: 0 0 15px red;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px){
+    .service-card{
+        padding: 20px;
+    }
+}
+
+/* Booking Section */
+.booking-section{
+    background-color: rgb(3, 2, 36);
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+/* Form */
+.booking-form{
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,0,0,0.3);
+}
+
+/* Inputs */
+.booking-form .form-control{
+    background: transparent;
+    color: rgb(134, 4, 123);
+    border: 1px solid rgba(255,0,0,0.5);
+}
+
+/* Placeholder */
+.booking-form .form-control::placeholder{
+    color: red;
+}
+
+/* Focus */
+.booking-form .form-control:focus{
+    box-shadow: none;
+    border-color: white;
+}
+
+/* Button hover */
+.booking-form .btn:hover{
+    background-color: red;
+    color: rgb(3,2,36);
+    box-shadow: 0 0 15px red;
+}
